@@ -5,18 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pixora Designs — Creative digital design studio</title>
   <meta name="description" content="Pixora Designs — modern, fast and professional digital design services: logos, social kits, magazines, posters and more. Fast delivery, secure payments." />
-  <!-- Tailwind Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* small custom styles */
     .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(6px); }
-    .accent { color: #7c3aed; } /* purple */
+    .accent { color: #7c3aed; }
   </style>
 </head>
 <body class="bg-gradient-to-br from-black via-slate-900 to-gray-900 text-gray-100 antialiased">
   <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
     <div class="flex items-center gap-4">
-      <img src="logo.png" alt="Pixora Designs logo" class="w-28 h-28 object-contain" />
+      <img src="logo.png" alt="Pixora Designs logo" class="w-24 h-24 object-contain" />
       <div>
         <h1 class="text-2xl font-extrabold">Pixora Designs</h1>
         <p class="text-sm text-gray-400">We bring your creative vision to life — fast & flawlessly</p>
@@ -51,9 +49,9 @@
           <h3 class="text-lg font-bold mb-2">Quick Order</h3>
           <p class="text-sm text-gray-400 mb-4">Choose a service and upload samples — we'll handle the rest.</p>
           <ul class="space-y-2 text-sm">
-            <li class="flex justify-between"><span>Logo Design</span><span class="text-gray-300">From ₦—</span></li>
-            <li class="flex justify-between"><span>Social Media Kit</span><span class="text-gray-300">From ₦—</span></li>
-            <li class="flex justify-between"><span>Digital Magazine</span><span class="text-gray-300">From ₦—</span></li>
+            <li class="flex justify-between"><span>Logo Design</span><span class="text-gray-300">From ₦5,000</span></li>
+            <li class="flex justify-between"><span>Social Media Kit</span><span class="text-gray-300">From ₦3,000</span></li>
+            <li class="flex justify-between"><span>Digital Magazine</span><span class="text-gray-300">From ₦12,000</span></li>
           </ul>
           <div class="mt-4">
             <button id="orderCta2" class="w-full px-4 py-3 rounded-xl bg-white/5">Start an Order</button>
@@ -68,70 +66,81 @@
       <p class="text-gray-400 mt-2">We deliver soft-copy files only. Choose a service to see details and delivery times.</p>
 
       <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- list of most demanded digital design services -->
+        <!-- Logo with pricing cards (examples) -->
         <article class="p-6 rounded-2xl glass border border-gray-800">
           <h4 class="font-bold">Logo Design</h4>
-          <p class="text-sm text-gray-300 mt-2">High-resolution vector logo (AI, EPS, SVG, PNG) suitable for web and print.</p>
+          <p class="text-sm text-gray-300 mt-2">From simple text logos to full illustration mascots.</p>
+          <ul class="mt-3 text-sm text-gray-300 space-y-1">
+            <li><strong>Basic</strong> — ₦5,000 (1 concept)</li>
+            <li><strong>Standard</strong> — ₦15,000 (2 concepts)</li>
+            <li><strong>Premium</strong> — ₦30,000 (3 concepts, illustration)</li>
+          </ul>
           <div class="mt-4 text-sm text-gray-400">Delivery: 24–48 hours</div>
-        </article>
-
-        <article class="p-6 rounded-2xl glass border border-gray-800">
-          <h4 class="font-bold">Brand Identity Package</h4>
-          <p class="text-sm text-gray-300 mt-2">Logo, color palette, typography pairing, and basic usage guide (digital assets only).</p>
-          <div class="mt-4 text-sm text-gray-400">Delivery: 48–72 hours</div>
         </article>
 
         <article class="p-6 rounded-2xl glass border border-gray-800">
           <h4 class="font-bold">Social Media Kit</h4>
-          <p class="text-sm text-gray-300 mt-2">Cover/banner images, post templates, profile images sized for <Instagram>, <Facebook>, <Twitter>, <LinkedIn>.</p>
-          <div class="mt-4 text-sm text-gray-400">Delivery: 24–48 hours</div>
-        </article>
-
-        <article class="p-6 rounded-2xl glass border border-gray-800">
-          <h4 class="font-bold">Flyers & Posters</h4>
-          <p class="text-sm text-gray-300 mt-2">Digital flyers and posters delivered as high-resolution PNG/PDF.</p>
+          <p class="text-sm text-gray-300 mt-2">Post templates, banners & profile images.</p>
+          <ul class="mt-3 text-sm text-gray-300 space-y-1">
+            <li><strong>Basic</strong> — ₦3,000</li>
+            <li><strong>Standard</strong> — ₦8,000</li>
+            <li><strong>Premium</strong> — ₦18,000</li>
+          </ul>
           <div class="mt-4 text-sm text-gray-400">Delivery: 24–48 hours</div>
         </article>
 
         <article class="p-6 rounded-2xl glass border border-gray-800">
           <h4 class="font-bold">Digital Magazine / e-Zine</h4>
-          <p class="text-sm text-gray-300 mt-2">Multi-page PDF design and layout. Upload multiple images for magazine spreads.</p>
+          <p class="text-sm text-gray-300 mt-2">Multi-page PDF layout and design.</p>
+          <ul class="mt-3 text-sm text-gray-300 space-y-1">
+            <li><strong>Basic</strong> — ₦12,000</li>
+            <li><strong>Standard</strong> — ₦30,000</li>
+            <li><strong>Premium</strong> — ₦60,000</li>
+          </ul>
           <div class="mt-4 text-sm text-gray-400">Delivery: 72–120 hours</div>
+        </article>
+
+        <!-- other services kept from original -->
+        <article class="p-6 rounded-2xl glass border border-gray-800">
+          <h4 class="font-bold">Flyers & Posters</h4>
+          <p class="text-sm text-gray-300 mt-2">Digital flyers and posters delivered as high-resolution PNG/PDF.</p>
+          <ul class="mt-3 text-sm text-gray-300 space-y-1">
+            <li><strong>Basic</strong> — ₦3,000</li>
+            <li><strong>Standard</strong> — ₦8,000</li>
+            <li><strong>Premium</strong> — ₦15,000</li>
+          </ul>
+          <div class="mt-4 text-sm text-gray-400">Delivery: 24–48 hours</div>
         </article>
 
         <article class="p-6 rounded-2xl glass border border-gray-800">
           <h4 class="font-bold">Business Card (Digital)</h4>
           <p class="text-sm text-gray-300 mt-2">Print-ready digital files (PDF) and web-friendly PNGs.</p>
-          <div class="mt-4 text-sm text-gray-400">Delivery: 24 hours</div>
-        </article>
-
-        <article class="p-6 rounded-2xl glass border border-gray-800">
-          <h4 class="font-bold">Product Label & Packaging Mockup</h4>
-          <p class="text-sm text-gray-300 mt-2">Digital label design & mockups suitable for online listings.</p>
-          <div class="mt-4 text-sm text-gray-400">Delivery: 48–72 hours</div>
-        </article>
-
-        <article class="p-6 rounded-2xl glass border border-gray-800">
-          <h4 class="font-bold">Social Ads (static)</h4>
-          <p class="text-sm text-gray-300 mt-2">Designs sized for Facebook/Instagram ads — ready to upload.</p>
+          <ul class="mt-3 text-sm text-gray-300 space-y-1">
+            <li><strong>Basic</strong> — ₦1,500</li>
+            <li><strong>Standard</strong> — ₦3,500</li>
+            <li><strong>Premium</strong> — ₦6,000</li>
+          </ul>
           <div class="mt-4 text-sm text-gray-400">Delivery: 24 hours</div>
         </article>
 
         <article class="p-6 rounded-2xl glass border border-gray-800">
           <h4 class="font-bold">Presentation / Pitch Deck</h4>
           <p class="text-sm text-gray-300 mt-2">Slide design & export-ready PDF or PowerPoint file.</p>
+          <ul class="mt-3 text-sm text-gray-300 space-y-1">
+            <li><strong>Basic</strong> — ₦6,000</li>
+            <li><strong>Standard</strong> — ₦15,000</li>
+            <li><strong>Premium</strong> — ₦30,000</li>
+          </ul>
           <div class="mt-4 text-sm text-gray-400">Delivery: 48–72 hours</div>
         </article>
       </div>
-
-      <p class="text-sm text-gray-400 mt-4">(If you'd like to show prices here, tell me the ranges and I'll update the cards.)</p>
     </section>
 
     <!-- How it works -->
     <section id="how" class="py-12">
       <h3 class="text-3xl font-extrabold">How it works</h3>
       <ol class="mt-4 space-y-4 text-gray-300 list-decimal list-inside">
-        <li>Choose a service and click <em>Order Design</em>.</li>
+        <li>Choose a service and package.</li>
         <li>Fill the brief and upload any inspiration (you can attach multiple files).</li>
         <li>Proceed to secure payment (Paystack). After payment our team starts work.</li>
         <li>Receive your final soft-copy files by email or share link.</li>
@@ -149,6 +158,8 @@
         <!-- Netlify form -->
         <form id="orderForm" name="pixora-order" method="POST" data-netlify="true" enctype="multipart/form-data" class="mt-4 space-y-4">
           <input type="hidden" name="form-name" value="pixora-order" />
+          <input type="hidden" name="order_ref" id="order_ref" value="" />
+          <input type="hidden" name="package_price" id="package_price" value="" />
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -166,9 +177,10 @@
               <label class="text-sm text-gray-300">WhatsApp number</label>
               <input required name="whatsapp" type="tel" class="mt-1 w-full rounded-lg bg-gray-900 border border-gray-800 p-3" placeholder="+234 912 345 6789" />
             </div>
+
             <div>
               <label class="text-sm text-gray-300">Choose service</label>
-              <select required name="service" class="mt-1 w-full rounded-lg bg-gray-900 border border-gray-800 p-3">
+              <select required name="service" id="serviceSelect" class="mt-1 w-full rounded-lg bg-gray-900 border border-gray-800 p-3">
                 <option value="Logo Design">Logo Design</option>
                 <option value="Brand Identity Package">Brand Identity Package</option>
                 <option value="Social Media Kit">Social Media Kit</option>
@@ -180,10 +192,38 @@
                 <option value="Presentation / Pitch Deck">Presentation / Pitch Deck</option>
                 <option value="Other">Other</option>
               </select>
-              <div id="otherServiceContainer" class="mt-2 hidden">
-  <label class="text-sm text-gray-300">Please specify your design type</label>
-  <input type="text" name="customService" id="customService" class="mt-1 w-full rounded-lg bg-gray-900 border border-gray-800 p-3" placeholder="Describe your design" />
-</div>
+            </div>
+          </div>
+
+          <!-- Package selector -->
+          <div id="packageArea" class="space-y-2">
+            <label class="text-sm text-gray-300">Choose package</label>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <label class="p-3 rounded-lg glass border border-gray-800 flex flex-col items-start cursor-pointer">
+                <input type="radio" name="package" value="Basic" data-price="5000" class="mb-2" checked />
+                <strong>Basic</strong>
+                <span class="text-sm text-gray-400">Quick & simple — From ₦5,000</span>
+              </label>
+              <label class="p-3 rounded-lg glass border border-gray-800 flex flex-col items-start cursor-pointer">
+                <input type="radio" name="package" value="Standard" data-price="15000" class="mb-2" />
+                <strong>Standard</strong>
+                <span class="text-sm text-gray-400">More options — From ₦15,000</span>
+              </label>
+              <label class="p-3 rounded-lg glass border border-gray-800 flex flex-col items-start cursor-pointer">
+                <input type="radio" name="package" value="Premium" data-price="30000" class="mb-2" />
+                <strong>Premium</strong>
+                <span class="text-sm text-gray-400">Illustration & full brand — From ₦30,000</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Add-ons -->
+          <div>
+            <label class="text-sm text-gray-300">Add-ons (optional)</label>
+            <div class="mt-2 flex gap-3 flex-wrap">
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="addon_fast" value="Fast delivery +3000" data-addon-price="3000" /> Fast delivery (+₦3,000)</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="addon_revision" value="Extra revision +2000" data-addon-price="2000" /> Extra revision (+₦2,000)</label>
+              <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="addon_source" value="Source files +5000" data-addon-price="5000" /> Source files (+₦5,000)</label>
             </div>
           </div>
 
@@ -195,7 +235,7 @@
           <div>
             <label class="text-sm text-gray-300">Upload files (you may attach multiple files)</label>
             <input name="files" type="file" multiple class="mt-1 w-full text-sm text-gray-300" />
-            <p class="text-xs text-gray-500 mt-1">Accepted: images, PDFs, ZIPs. Max file size depends on host (Netlify supports uploads via form submissions).</p>
+            <p class="text-xs text-gray-500 mt-1">Accepted: images, PDFs, ZIPs. Max file size depends on host.</p>
           </div>
 
           <div class="flex items-center gap-3">
@@ -269,10 +309,9 @@
   </footer>
 
   <script>
-    // Replace with your actual paystack payment link
+    // Paystack link (kept from your code)
     const PAYSTACK_LINK = 'https://paystack.shop/pay/vpnfjobg4b';
 
-    // Auto-reply text for customers (short)
     const AUTO_REPLY_TEXT = "Thanks for your order! We've received your request and payment. Our team will review the brief and contact you via email or WhatsApp within 24 hours.";
 
     // Modal controls
@@ -289,38 +328,68 @@
     closeModal.addEventListener('click', () => orderModal.classList.add('hidden'));
     cancelBtn.addEventListener('click', () => orderModal.classList.add('hidden'));
 
+    // small helper: generate short order id
+    function genOrderRef() {
+      const t = Date.now().toString(36).slice(-6).toUpperCase();
+      const r = Math.random().toString(36).slice(2,6).toUpperCase();
+      return `PX-${t}${r}`;
+    }
+
+    // keep package price and order ref updated
+    function updatePackagePrice() {
+      const pkgRadios = document.querySelectorAll('input[name="package"]');
+      let chosen = null;
+      pkgRadios.forEach(r => { if (r.checked) chosen = r; });
+      const price = chosen ? chosen.getAttribute('data-price') : '';
+      document.getElementById('package_price').value = price;
+    }
+
+    // attach event to package radios and compute price if add-ons selected
+    document.querySelectorAll('input[name="package"]').forEach(el => el.addEventListener('change', updatePackagePrice));
+    document.querySelectorAll('input[type="checkbox"][data-addon-price]').forEach(el => el.addEventListener('change', function(){ /* no-op here, price stored on submit */ }));
+
+    // when opening modal, set order ref and default package price
+    [orderBtn, orderCta, orderCta2].forEach(el => el && el.addEventListener('click', () => {
+      document.getElementById('order_ref').value = genOrderRef();
+      updatePackagePrice();
+    }));
+
     // Form submit flow: send form to Netlify, then open Paystack in new tab
     orderForm.addEventListener('submit', function(e) {
       e.preventDefault();
       formStatus.classList.remove('hidden');
       formStatus.textContent = 'Submitting your brief...';
 
+      // calculate final price (base + addons)
+      const base = parseInt(document.getElementById('package_price').value || '0', 10);
+      let addonsTotal = 0;
+      document.querySelectorAll('input[type="checkbox"][data-addon-price]').forEach(cb => { if (cb.checked) addonsTotal += parseInt(cb.getAttribute('data-addon-price')||'0',10); });
+
+      const finalPrice = base + addonsTotal;
+
+      // append a field for final price to the form data
       const formData = new FormData(orderForm);
-      // Add an admin email so you can find it quickly in form submissions
+      formData.append('final_price', finalPrice);
       formData.append('admin_email', 'Eamune14@gmail.com');
 
-      // POST to Netlify (works when deployed on Netlify)
-      fetch('/', {
-        method: 'POST',
-        body: formData
-      }).then(response => {
-        // Netlify responds with a 200 on success; we will open payment
+      // POST to Netlify
+      fetch('/', { method: 'POST', body: formData })
+      .then(() => {
         formStatus.textContent = 'Brief submitted. Redirecting to payment...';
-        // Open Paystack in new tab
+        // Optionally you can direct to a dynamic paystack link with amount, but for now open your paystack link
         window.open(PAYSTACK_LINK, '_blank');
-        // show on-page confirmation
         orderForm.reset();
         orderModal.classList.add('hidden');
-        alert(AUTO_REPLY_TEXT);
-      }).catch(err => {
+        alert(`${AUTO_REPLY_TEXT}\nOrder ID: ${document.getElementById('order_ref').value}\nAmount (NGN): ${finalPrice}`);
+      })
+      .catch(err => {
         console.error(err);
         formStatus.textContent = 'Could not submit the brief automatically. Please email your brief to Eamune14@gmail.com and proceed to payment.';
-        // still open payment link so user can pay
         window.open(PAYSTACK_LINK, '_blank');
       });
     });
 
-    // Optional: smooth scrolling for anchor links
+    // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', function(e){
       e.preventDefault();
       const target = document.querySelector(this.getAttribute('href'));
